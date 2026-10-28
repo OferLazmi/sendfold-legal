@@ -54,12 +54,12 @@
         </ul>
 
         <h2>4. Purchases</h2>
-        <p>The free trial and the one-time Full Unlock are handled entirely by Apple through the App Store (StoreKit). We never receive your payment details, name or Apple ID. The app only checks Apple-signed transaction records on your Mac to know whether export is unlocked. Apple's handling of purchases is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+        <p>The free trial and the one-time Full Unlock are handled entirely by Apple through the App Store (StoreKit). Starting the free trial is recorded by Apple as a free in-app purchase on your Apple Account, just like Full Unlock. We never receive your payment details, name or Apple ID. The app only checks Apple-signed transaction records on your Mac to know whether export is unlocked. Apple's handling of purchases is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
         <h2>5. Data stored on your Mac</h2>
         <p>To work, the app keeps the following information locally on your Mac. None of it is ever sent to us or anyone else, which is why the App Store privacy label says "Data Not Collected":</p>
         <ul>
-            <li><strong>Trial start time:</strong> the date and time you started the free trial, stored in your macOS Keychain so the trial cannot be restarted. This Keychain item is <strong>not</strong> removed when you delete the app. You can remove it with the Keychain Access app.</li>
+            <li><strong>Last seen clock time:</strong> the most recent date and time the app saw on your Mac's clock, stored in your macOS Keychain. It is used only to detect if the clock was set backwards, so the 7-day trial period is measured correctly. This Keychain item is <strong>not</strong> removed when you delete the app. You can remove it with the Keychain Access app.</li>
             <li><strong>Recovery log:</strong> a small log with the names of output files, identifiers of the output folders and timestamps, used to finish or clean up a save that was interrupted.</li>
             <li><strong>Last opened folder:</strong> so the file picker opens where you left off.</li>
             <li><strong>Temporary working folders:</strong> used while processing and cleaned up afterwards.</li>
