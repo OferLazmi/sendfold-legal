@@ -28,7 +28,7 @@
         <p class="date">Last updated: October 28, 2026</p>
 
         <div class="note">
-            <p>Sendfold does not collect, store, or share any personal data. Your PDFs never leave your Mac.</p>
+            <p>Sendfold does not collect or share any personal data. Your PDFs are processed on your Mac and never leave it.</p>
         </div>
 
         <h2>1. Who we are</h2>
@@ -37,9 +37,12 @@
         <h2>2. Your documents stay on your Mac</h2>
         <ul>
             <li>All merging, page editing and compression happens locally on your Mac.</li>
-            <li>The app works fully offline. It does not upload your files to us or to any server.</li>
+            <li>Processing your PDFs needs no internet connection. The app never uploads your files to us or to any server.</li>
+            <li>Starting the free trial, buying Full Unlock, restoring purchases and refreshing your purchase status are done with Apple's App Store servers and need an internet connection. No document content is sent.</li>
             <li>The app only opens files and folders you explicitly choose (macOS App Sandbox, user-selected file access).</li>
-            <li>Output files are saved only where you choose. Temporary working files are kept inside the app's own sandbox container on your Mac.</li>
+            <li>Output files are saved only where you choose.</li>
+            <li>While saving, the app first writes a hidden temporary file named <code>.sendfold-&lt;random ID&gt;.tmp</code> in the output folder you chose, then replaces it with the finished file. If the app or your Mac stops unexpectedly during a save, this hidden file may be left in that folder. You can safely delete it.</li>
+            <li>Temporary working folders used during processing are kept on your Mac, inside the app's sandbox container.</li>
         </ul>
 
         <h2>3. No data collection, no tracking</h2>
@@ -54,7 +57,15 @@
         <p>The free trial and the one-time Full Unlock are handled entirely by Apple through the App Store (StoreKit). We never receive your payment details, name or Apple ID. The app only checks Apple-signed transaction records on your Mac to know whether export is unlocked. Apple's handling of purchases is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
         <h2>5. Data stored on your Mac</h2>
-        <p>The app keeps small local settings (for example your preferences and trial/purchase status) on your Mac. This information stays on your device and is removed when you delete the app and its data.</p>
+        <p>To work, the app keeps the following information locally on your Mac. None of it is ever sent to us or anyone else, which is why the App Store privacy label says "Data Not Collected":</p>
+        <ul>
+            <li><strong>Trial start time:</strong> the date and time you started the free trial, stored in your macOS Keychain so the trial cannot be restarted. This Keychain item is <strong>not</strong> removed when you delete the app. You can remove it with the Keychain Access app.</li>
+            <li><strong>Recovery log:</strong> a small log with the names of output files, identifiers of the output folders and timestamps, used to finish or clean up a save that was interrupted.</li>
+            <li><strong>Last opened folder:</strong> so the file picker opens where you left off.</li>
+            <li><strong>Temporary working folders:</strong> used while processing and cleaned up afterwards.</li>
+            <li><strong>Preferences and purchase status:</strong> your settings and whether the trial or Full Unlock is active.</li>
+        </ul>
+        <p>Apart from the Keychain item, this data is stored in the app's container and is removed when you delete the app and its data.</p>
 
         <h2>6. Children</h2>
         <p>The app does not collect information from anyone, including children.</p>
